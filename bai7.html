@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <table border="3" bordercolor="yellow" bgcolor="sky blue" width="400" align="center">
+                <tr>
+                    <th colspan="2" bgcolor="white">Phiếu đăng ký</th>
+                </tr>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại:</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Phái:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Nam
+                        <input type="radio" name="gender" value="female">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp:</td>
+                    <td>
+                        <select name="nghenghiep">
+                            <option value="student">Học sinh</option>
+                            <option value="teacher">Giáo viên</option>
+                            <option value="doctor">Bác sĩ</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia:</td>
+                    <td>
+                        <select name="sanpham">
+                            <option value="sanpham1">Kem đánh răng</option>
+                            <option value="sanpham2">Sữa rửa mặt</option>
+                            <option value="sanpham3">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán:</td>
+                    <td><input type="number" name="attendees" min="1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Đồng ý"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
