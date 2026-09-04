@@ -5,58 +5,140 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Document</title>
     </head>
-    <body>
-        <form>
-            <table border="3" bordercolor="yellow" bgcolor="sky blue" width="400" align="center">
-                <tr>
-                    <th colspan="2" bgcolor="white">Phiếu đăng ký</th>
-                </tr>
-                <tr>
-                    <td>Họ và tên:</td>
-                    <td><input type="text" name="fname"></td>
-                </tr>
-                <tr>
-                    <td>Địa chỉ:</td>
-                    <td><input type="text" name="address"></td>
-                </tr>
-                <tr>
-                    <td>Điện thoại:</td>
-                    <td><input type="text" name="phone"></td>
-                </tr>
-                <tr>
-                    <td>Phái:</td>
-                    <td>
-                        <input type="radio" name="gender" value="male">Nam
-                        <input type="radio" name="gender" value="female">Nữ
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nghề nghiệp:</td>
-                    <td>
-                        <select name="nghenghiep">
-                            <option value="student">Học sinh</option>
-                            <option value="teacher">Giáo viên</option>
-                            <option value="doctor">Bác sĩ</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Chọn sản phẩm tham gia:</td>
-                    <td>
-                        <select name="sanpham">
-                            <option value="sanpham1">Kem đánh răng</option>
-                            <option value="sanpham2">Sữa rửa mặt</option>
-                            <option value="sanpham3">Sữa tắm</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Số người dự đoán:</td>
-                    <td><input type="number" name="attendees" min="1"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center"><input type="submit" value="Đồng ý"></td>
-                </tr>
-            </table>
-        </form>
-    </body>
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tỏa sáng cùng </title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            width: 900px;
+            margin: 0 auto;
+            border: 3px solid #390ca1;
+            background: white;
+            position: relative; 
+            padding-top: 0;
+        }
+        .header-top {
+            background: #5457bd;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header-main {
+            background: #bbb6ea;
+            border-bottom: 3px solid #7874df;
+            position: relative; 
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-title {
+            color: #5d4dba;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .header-img {
+            position: absolute; 
+            top: 8px;           
+            right: 8px;         
+            width: 90px;        
+            height: 85px;
+            border: 1px solid #999;
+        }
+        .header-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        .content {
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+        }
+        .col {
+            width: 50%;
+            padding: 15px;
+            text-align: left;
+        }
+        .col-left {
+            border-right: 2px solid #7f97e7;
+        }
+        .section-title {
+            color: #7565c5;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .section-title::before {
+            content: "☐ ";
+        }
+        ul, ol {
+            margin: 5px 0 15px 25px;
+            padding:0 ;
+            line-height:1.6;
+        }
+        li {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-top">
+        Công nghệ dầu gội dưỡng tóc mới
+    </div>
+
+    <div class="header-main">
+        <div class="header-title">
+            Tỏa sáng cùng DOVE
+        </div>
+        <!-- Ảnh góc phải -->
+        <div class="header-img">
+            <img src="https://media.hcdn.vn/wysiwyg/minhchau/dau-goi-dove-moi-2021-1.jpg" alt="Dove">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="col col-left">
+            <div class="section-title">Sản phẩm khuyến mãi :</div>
+            <ul>
+                <li>Dầu gội Dove mới 200ml, 400ml có tem khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="section-title">Đối tượng tham gia :</div>
+            <ul>
+                <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi.</li>
+                <li>Chương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý, đại lý, cửa hàng bán sỉ, lẻ và các cá nhân kinh doanh sản phẩm của công ty LDMP LG Vina, công ty quảng cáo, công ty làm dịch vụ chương trình khuyến mãi này, nhân viên siêu thị</li>
+            </ul>
+        </div>
+        </div>
+        <div class="col">
+            <div class="section-title">Cách thức nhận giải :</div>
+            <ol>
+                <li>
+                    <i><b>Giải khuyến khích</b></i> : Khách hàng đổi quà tại các cửa hàng bán lẻ trên toàn quốc bắt đầu. Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005
+                </li>
+                <li>
+                    <i><b>Giải đặc biệt, nhất, nhì</b></i> : khách hàng cắt phần mã vạch trên mỗi chai dầu gội có khuyến mãi và gởi kèm phiếu trúng thưởng về văn phòng công ty, hạn chót đến hết ngày 31/07/2005 (căn cứ theo dấu bưu điện nơi gởi). Sau đó công ty sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàng
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
